@@ -81,11 +81,16 @@
 		        
 					<a class="zhihu" target="_blank" href="https://www.zhihu.com" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
+					<a class="mail" target="_blank" href="https://mail.google.com/" title="mail"><i class="icon-mail"></i></a>
+		        
+			</div>
+
+			<div style="margin-top:20px;">
+				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=250 height=90 src="//music.163.com/outchain/player?type=2&id=1394369908&auto=1&height=66"></iframe>
 			</div>
 		</nav>
 	</header>		
 </div>
-
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
@@ -117,6 +122,8 @@
 						<a class="github" target="_blank" href="https://github.com/BrucehWayne" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="zhihu" target="_blank" href="https://www.zhihu.com" title="zhihu"><i class="icon-zhihu"></i></a>
+			        
+						<a class="mail" target="_blank" href="https://mail.google.com/" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -199,7 +206,37 @@
 
         <div class="article-info info-on-right">
           
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">md</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
           
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/BruchhWayne.github.io/categories/md//" class="article-tag-list-link color3">md</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/BruchhWayne.github.io/categories/md/生活//" class="article-tag-list-link color3">生活</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
         </div>
         <div class="clearfix"></div>
@@ -288,33 +325,6 @@
   </div>
 </article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/BruchhWayne.github.io/2021/10/25/hello-world/" class="archive-article-date">
-  	<time datetime="2021-10-25T02:37:50.573Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/BruchhWayne.github.io/2021/10/25/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
   
     </div></section>
   
@@ -325,18 +335,29 @@
           </div>
         </div>
       </div>
-      <footer id="footer">
-  <div class="outer">
-    <div id="footer-info">
-    	<div class="footer-left">
-    		&copy; 2021 Bruce Wayne
-    	</div>
-      	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> copy from Litten
-      	</div>
-    </div>
-  </div>
-</footer>
+      
+
+<footer id="footer">
+	<div class="outer">
+	  <div id="footer-info">
+		  <div class="footer-left">
+			  &copy; 2021 Bruce Wayne
+		  </div>
+			<div class="footer-right">
+				<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+				<span id="busuanzi_container_site_pv">
+				  本站总访问量：<span id="busuanzi_https://brucehwayne.github.io/BruchhWayne.github.io/_site_pv"></span>次
+			  </span>
+			  <span class="post-meta-divider">|</span>
+			  <span id="busuanzi_container_site_uv">
+				  本站访客数：<span id="busuanzi_https://brucehwayne.github.io/BruchhWayne.github.io/_site_uv"></span>人
+			  </span>
+			</div>
+
+	  </div>
+	</div>
+  </footer>
+
 <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
 <script>
 	var now = new Date(); 
@@ -354,9 +375,6 @@
 	} 
 	setInterval("createtime()",250);
 </script>
-
-<!--鼠标点击出现图案-->
-<script type="text/javascript" src="/love.js"></script>
 
 
     </div>
@@ -432,6 +450,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">md</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">生活</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -483,26 +509,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           
             <li class="search-li">
               <a href="https://github.com/BrucehWayne" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>我的github</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
             </li>
           
         </ul>
