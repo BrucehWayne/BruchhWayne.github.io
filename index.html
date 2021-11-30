@@ -158,6 +158,90 @@
   
     
 
+<article id="post-js的常识" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/BruchhWayne.github.io/2021/11/30/js%E7%9A%84%E5%B8%B8%E8%AF%86/">js的常识</a>
+    </h1>
+  
+
+        
+        <a href="/BruchhWayne.github.io/2021/11/30/js%E7%9A%84%E5%B8%B8%E8%AF%86/" class="archive-article-date">
+  	<time datetime="2021-11-30T11:52:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-30</time>
+</a>
+        
+      </header>
+    
+
+    
+  
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="定义常识"><a href="#定义常识" class="headerlink" title="定义常识"></a>定义常识</h1><h2 id="var-let-const的区别"><a href="#var-let-const的区别" class="headerlink" title="var let const的区别"></a>var let const的区别</h2><h3 id="var的情况"><a href="#var的情况" class="headerlink" title="var的情况"></a>var的情况</h3><p><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.65f63sg1gcc0.png" alt="image"><br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.41lg9smyot80.png" alt="image"><br>这里已经跳出了for循环，还可以访问到<strong>a</strong>的值<br><strong>var 作用域是函数体的全部</strong>，for循环外面也可以访问<br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.54vhrnv2vgo0.png" alt="image"><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.ciaiglcphsg.png" alt="image"><br>这里var a 直接被后面<strong>覆盖了</strong></p>
+<h3 id="let的情况"><a href="#let的情况" class="headerlink" title="let的情况"></a>let的情况</h3><p><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.1rgdpt9njwg0.png" alt="image"><br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.53qj668unqo0.png" alt="image"><br>let 作用域有块级作用域<strong>就是{}内有效，出了就无法访问</strong>，虽然是全局变量当没有全局对象的属性<br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.5rn0ca0o7d40.png" alt="image"><br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.668evrlxuz40.png" alt="image"><br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.19t6twe2y71c.png" alt="image"><br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.6o2hwc1pl6w0.png" alt="image"><br>let可以跟var一样修改但<strong>不能重复定义</strong></p>
+<h3 id="const的情况"><a href="#const的情况" class="headerlink" title="const的情况"></a>const的情况</h3><p>1.不能重复定义，不能修改，相当于常数<br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.7h5ntrkq3dk0.png" alt="image"><br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.7nf4986qswg.png" alt="image"><br>2.有作用域<br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.2zkb5shse5s0.png" alt="image"><br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.1xemzr9lugn4.png" alt="image"><br><em>const</em> <strong>有作用域而且不能修改不能重复定义</strong></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/BruchhWayne.github.io/2021/11/30/js%E7%9A%84%E5%B8%B8%E8%AF%86/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+  
+    
+
 <article id="post-献血攻略" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -702,6 +786,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">生活</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
             
             <div class="clearfix"></div>
