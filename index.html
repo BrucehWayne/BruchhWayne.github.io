@@ -158,6 +158,190 @@
   
     
 
+<article id="post-python常识" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/BruchhWayne.github.io/2021/12/11/python%E5%B8%B8%E8%AF%86/">python常识</a>
+    </h1>
+  
+
+        
+        <a href="/BruchhWayne.github.io/2021/12/11/python%E5%B8%B8%E8%AF%86/" class="archive-article-date">
+  	<time datetime="2021-12-11T11:28:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-11</time>
+</a>
+        
+      </header>
+    
+
+    
+  
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="第一章-搭建Python环境"><a href="#第一章-搭建Python环境" class="headerlink" title="第一章 搭建Python环境"></a>第一章 搭建Python环境</h1><p>有手，电脑就行</p>
+<h1 id="第二章-变量和简单数据类型"><a href="#第二章-变量和简单数据类型" class="headerlink" title="第二章 变量和简单数据类型"></a>第二章 变量和简单数据类型</h1><h2 id="2-3-1修改字符串的大小写"><a href="#2-3-1修改字符串的大小写" class="headerlink" title="2.3.1修改字符串的大小写"></a>2.3.1修改字符串的大小写</h2><h3 id="title-的用法-首字母大写"><a href="#title-的用法-首字母大写" class="headerlink" title="title()的用法:首字母大写"></a>title()的用法:首字母大写</h3><p>name = “apple banana”<br>print(name.title())<br>结果:<strong>Apple Banana</strong></p>
+<h2 id="2-3-2-合并-拼接-字符串"><a href="#2-3-2-合并-拼接-字符串" class="headerlink" title="2.3.2 合并(拼接)字符串"></a>2.3.2 合并(拼接)字符串</h2><p>first_name = “apple”<br>last_name = “banana”<br>full_name = first_name + “ “ + last_name<br>print(full_name)<br>结果:<strong>apple banana</strong><br>print(“Hello,”+full_name.title()+”!”)<br>结果<strong>Hello,Apple Banana!</strong></p>
+<h2 id="2-3-3使用制表符或换行符来添加空白"><a href="#2-3-3使用制表符或换行符来添加空白" class="headerlink" title="2.3.3使用制表符或换行符来添加空白"></a>2.3.3使用制表符或换行符来添加空白</h2><h3 id="换行-n-制表符-t"><a href="#换行-n-制表符-t" class="headerlink" title="换行\n 制表符\t"></a>换行\n 制表符\t</h3><h2 id="2-3-4删除空白"><a href="#2-3-4删除空白" class="headerlink" title="2.3.4删除空白"></a>2.3.4删除空白</h2><h3 id="rstrip-的用法：删除末尾的空白"><a href="#rstrip-的用法：删除末尾的空白" class="headerlink" title="rstrip()的用法：删除末尾的空白"></a>rstrip()的用法：删除末尾的空白</h3><p>first_name=”apple “<br>print(first_name.rstrip())<br>结果:<strong>apple</strong></p>
+<h3 id="lstrip-的用法：删除开头的空白"><a href="#lstrip-的用法：删除开头的空白" class="headerlink" title="lstrip()的用法：删除开头的空白"></a>lstrip()的用法：删除开头的空白</h3><p>last_name=” banana”<br>print(last_name.lstrip())<br>结果:<strong>banana</strong></p>
+<h3 id="删除开头末尾的空白"><a href="#删除开头末尾的空白" class="headerlink" title="删除开头末尾的空白"></a>删除开头末尾的空白</h3><p>full_name=” apple banana “<br>print(full_name.lstrip().rstrip())<br>结果:”apple banana”</p>
+<h2 id="2-3-5使用字符串时避免语法错误"><a href="#2-3-5使用字符串时避免语法错误" class="headerlink" title="2.3.5使用字符串时避免语法错误"></a>2.3.5使用字符串时避免语法错误</h2><p>python中打’s用转义字符<br>print(“I&#39;m Brcue Wayne.”)<br>结果:I’m Bruce Wayne.</p>
+<h2 id="2-4-2浮点数"><a href="#2-4-2浮点数" class="headerlink" title="2.4.2浮点数"></a>2.4.2浮点数</h2><p>计算机无法准确表示小数<br>print(3*0.1)<br>结果:0.30000000000000004<br>后面的章节会来处理</p>
+<h2 id="2-4-3使用函数str-避免类型错误"><a href="#2-4-3使用函数str-避免类型错误" class="headerlink" title="2.4.3使用函数str()避免类型错误"></a>2.4.3使用函数str()避免类型错误</h2><p>age=23<br>message = “Happy “+age+”th birthday!”<br>print(message)<br>这样会报错，因为无法判断age的类型是Int二十三还是str23<br>需要改为message = “Happy “+str(age)+”th birthday!”<br>结果:Happy 23th birthday!</p>
+<h2 id="2-5注释"><a href="#2-5注释" class="headerlink" title="2.5注释"></a>2.5注释</h2><h3 id="单行python注释用-来表示"><a href="#单行python注释用-来表示" class="headerlink" title="单行python注释用#来表示"></a>单行python注释用#来表示</h3><h3 id="多行Python注释用一对”””或’’’来注释"><a href="#多行Python注释用一对”””或’’’来注释" class="headerlink" title="多行Python注释用一对”””或’’’来注释"></a>多行Python注释用一对”””或’’’来注释</h3><p>‘’’或”””的特别用法：<br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.4fo5biprzog0.png" alt="image"><br>结果<br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.59mfdi7bld00.png" alt="image"><br>可以用来保持内容显示的格式，如这里的换行，虽然可以用\n的转义字符来使用，但这样编写代码的时候直观，里面的#也会显示出来</p>
+<h3 id="连行符"><a href="#连行符" class="headerlink" title="连行符\"></a>连行符\</h3><p><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.7lcluwsgk9c0.png" alt="image"><br>结果<br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.1c1c7x7dvk1s.png" alt="image"></p>
+<h1 id="第三章-列表"><a href="#第三章-列表" class="headerlink" title="第三章 列表"></a>第三章 列表</h1><h2 id="3-1-1访问列表"><a href="#3-1-1访问列表" class="headerlink" title="3.1.1访问列表"></a>3.1.1访问列表</h2><p>phones = [‘apple’,’huawei’,’xiaomi’,’oppo’,’vivo’]<br>print(phones[0].title())<br>结果:Apple</p>
+<h2 id="3-1-2-索引从0开始"><a href="#3-1-2-索引从0开始" class="headerlink" title="3.1.2 索引从0开始"></a>3.1.2 索引从0开始</h2><h2 id="3-2-修改、添加和删除元素"><a href="#3-2-修改、添加和删除元素" class="headerlink" title="3.2 修改、添加和删除元素"></a>3.2 修改、添加和删除元素</h2><h3 id="append-列表添加元素"><a href="#append-列表添加元素" class="headerlink" title="append()列表添加元素"></a>append()列表添加元素</h3><p>phones = []<br>phones.append(‘banana’)<br>print(phones)<br>结果:[‘banana’]</p>
+<h3 id="insert-列表插入元素insert-位置-内容"><a href="#insert-列表插入元素insert-位置-内容" class="headerlink" title="insert()列表插入元素insert(位置,内容)"></a>insert()列表插入元素insert(位置,内容)</h3><p>phones.insert(0,’canda’)<br>print(phones)<br>结果:[‘canda’,’banana’]</p>
+<h3 id="del列表删除元素"><a href="#del列表删除元素" class="headerlink" title="del列表删除元素"></a>del列表删除元素</h3><p>使用方法：</p>
+<h5 id="del-listname-index-删除一个元素"><a href="#del-listname-index-删除一个元素" class="headerlink" title="del listname[index] 删除一个元素"></a>del listname[index] 删除一个元素</h5><h5 id="del-listname-start-end-删除start到end之间的元素，但不包括end位置的元素"><a href="#del-listname-start-end-删除start到end之间的元素，但不包括end位置的元素" class="headerlink" title="del listname[start:end] 删除start到end之间的元素，但不包括end位置的元素"></a>del listname[start:end] 删除start到end之间的元素，但不包括end位置的元素</h5><p>phones = [‘apple’,’banana’,’c’,’d’]<br>del phones[0]<br>print(phones)<br>结果:[‘banana’,’c’,’d’]</p>
+<p>phones = [‘apple’,’banana’,’c’,’d’]<br>del phones[0:-1]<br>print(phones)<br>结果:[‘d’]</p>
+<h3 id="pop-删除列表元素-同时返回元素"><a href="#pop-删除列表元素-同时返回元素" class="headerlink" title="pop()删除列表元素,同时返回元素"></a>pop()删除列表元素,同时返回元素</h3><p><strong>list.pop(obj=list[-1])默认是-1就是删除最后一个元素,同时返回从列表中删除的元素</strong><br>phones = [‘apple’,’huawei’,’xiaomi’,’oppo’,’vivo’]<br>print(phone.pop())<br>print(phone.pop(0))</p>
+<h3 id="remove-根据列表元素值来删除"><a href="#remove-根据列表元素值来删除" class="headerlink" title="remove()根据列表元素值来删除"></a>remove()根据列表元素值来删除</h3><p><strong>remove()会删除第一个和值相匹配的元素，如果不存在会报错</strong><em><strong>ValueError</strong></em><br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.2denigp9gm4g.png" alt="image"><br>结果：<br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.7upfcz5j86w.png" alt="image"></p>
+<h4 id="小疑问"><a href="#小疑问" class="headerlink" title="小疑问"></a>小疑问</h4><p><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.2huuqvimlak0.png" alt="image"><br>结果：<br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.5q2e4wxe46w0.png" alt="image"><br>尝试：<br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.3syp6p8fvpu0.png" alt="image"><br>尝试2：<br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.4jow19hsgum0.png" alt="image"><br><strong>结论：python在函数或方法无return的时候会返回None</strong></p>
+<h3 id="clear-清空列表-返回"><a href="#clear-清空列表-返回" class="headerlink" title="clear()清空列表 返回[]"></a>clear()清空列表 返回[]</h3><p><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.5ivxadelw7w0.png" alt="image"><br><strong>效果和del list[:]一样</strong><br><img src="https://raw.githubusercontent.com/BrucehWayne/picture/main/%E5%8C%97%E6%B5%B7%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9B%BE%E7%89%87/image.4x5fivekjo80.png" alt="image"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/BruchhWayne.github.io/2021/12/11/python%E5%B8%B8%E8%AF%86/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+  
+    
+
+<article id="post-12-11的生活" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/BruchhWayne.github.io/2021/12/11/12-11%E7%9A%84%E7%94%9F%E6%B4%BB/">12-11的生活</a>
+    </h1>
+  
+
+        
+        <a href="/BruchhWayne.github.io/2021/12/11/12-11%E7%9A%84%E7%94%9F%E6%B4%BB/" class="archive-article-date">
+  	<time datetime="2021-12-11T11:01:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-11</time>
+</a>
+        
+      </header>
+    
+
+    
+  
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="下午"><a href="#下午" class="headerlink" title="下午"></a>下午</h1><p>今天选毕设题目，选不到，练习了一下，看看有没有额外名额</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/BruchhWayne.github.io/2021/12/11/12-11%E7%9A%84%E7%94%9F%E6%B4%BB/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+  
+    
+
 <article id="post-js的常识" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -790,6 +974,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
             
             <div class="clearfix"></div>
